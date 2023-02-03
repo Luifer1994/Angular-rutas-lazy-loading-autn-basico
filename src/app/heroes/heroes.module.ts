@@ -5,6 +5,12 @@ import { SearchComponent } from './pages/search/search.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
+import { HeroesRoutingModule } from './heroes-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
+import { HeroeCardComponent } from './components/heroe-card-component/heroe-card-component';
+import { ImagePipe } from './pipes/image.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -14,10 +20,16 @@ import { ListComponent } from './pages/list/list.component';
     SearchComponent,
     HeroeComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    HeroeCardComponent,
+    ImagePipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HeroesRoutingModule,
+    FlexLayoutModule,
+    MaterialModule,
+    FormsModule
   ]
 })
 export class HeroesModule { }
