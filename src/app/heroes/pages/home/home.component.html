@@ -30,7 +30,8 @@
       <mat-icon class="mat-18">menu</mat-icon>
     </button>
     <span class="spacer"></span>
-    <button mat-button>Cerrar sesión</button>
+    <span>{{auth.usuario}}</span>
+    <button mat-button (click)="logout()">Cerrar sesión</button>
   </mat-toolbar>
 
   <div class="container">
